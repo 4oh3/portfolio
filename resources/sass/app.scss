@@ -1,0 +1,23 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+.btn-primary {
+    color: #fff;
+    background-color: $blue;
+    border-color: $blue;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: $dark-blue;
+    border-color: $darker-blue;
+}
+.btn-danger {
+    color: #fff;
+    background-color: $red;
+    border-color: $red;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: $dark-red;
+    border-color: $darker-red;
+}
