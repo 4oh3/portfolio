@@ -3,8 +3,8 @@
 		<!-- Start Sidebar -->
 		<div id="mobile-sidebar" :class="{ sidebarMinimized: desktopSidebarMinimized, sidebarMaximized: mobileSidebarActive }">
 			<div id="sidebar" @mouseover='toggleBodyPush' @mouseout='toggleBodyPush'>
-				<router-link @click='closeMobileSidebar' class="avatar-container" :to="'/about'">
-					<img class="avatar-image" src="/assets/austin.png" alt="Austin's Avatar Image">
+				<router-link class="avatar-container" :to="'/about'">
+					<img @click='closeMobileSidebar' class="avatar-image" src="/assets/austin.png" alt="Austin's Avatar Image">
 					<div class="avatar-text">
 						<h1>Austin's<br>Portfolio</h1>
 					</div>
@@ -445,7 +445,7 @@ body {
 	-moz-transition: all 0.25s ease;
 	-o-transition: all 0.25s ease;
 	transition: all 0.25s ease;
-	box-shadow: 0px 5px 15px 7.5px rgba(0,0,0,0.125);
+	box-shadow: 0px 5px 15px 7.5px rgba(0,0,0,0.1);
 }
 .avatar-text h1 {
 	color: black;
