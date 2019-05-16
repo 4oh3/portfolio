@@ -3,7 +3,7 @@
 		<!-- Start Sidebar -->
 		<div id="mobile-sidebar" :class="{ sidebarMinimized: desktopSidebarMinimized, sidebarMaximized: mobileSidebarActive }">
 			<div id="sidebar" @mouseover='toggleBodyPush' @mouseout='toggleBodyPush'>
-				<router-link class="avatar-container" :to="'/about'">
+				<router-link @click='closeMobileSidebar' class="avatar-container" :to="'/about'">
 					<img class="avatar-image" src="/assets/austin.png" alt="Austin's Avatar Image">
 					<div class="avatar-text">
 						<h1>Austin's<br>Portfolio</h1>

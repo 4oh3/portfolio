@@ -63,17 +63,17 @@
 						<!-- Skill Circle Grid -->
 						<div class='container'>
 							<div @click="scrollToTop" class='row'>
-								<div @click="searchKey = 'HTML'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'HTML' }">
+								<div @click="searchKey = 'HTML'" class='col-4 skill-container'>
 									<div class="circle-desc">
-										<div class="green-circle skill-circle">HT</div>
+										<div class="green-circle skill-circle" :class="{ skillSelected: searchKey == 'HTML' }">HT</div>
 										<h6>HTML</h6>
 										<ul>
 											<li>HTML5</li>
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'Bootstrap'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'Bootstrap' }">
-									<div class="blue-circle skill-circle">CS</div>
+								<div @click="searchKey = 'Bootstrap'" class='col-4 skill-container'>
+									<div class="blue-circle skill-circle" :class="{ skillSelected: searchKey == 'Bootstrap' }">CS</div>
 									<div class="circle-desc">
 										<h6>CSS</h6>
 										<ul>
@@ -83,8 +83,8 @@
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'Vue.js'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'Vue.js' }">
-									<div class="red-circle skill-circle">JS</div>
+								<div @click="searchKey = 'Vue.js'" class='col-4 skill-container'>
+									<div class="red-circle skill-circle" :class="{ skillSelected: searchKey == 'Vue.js' }">JS</div>
 									<div class="circle-desc">
 										<h6>JavaScript</h6>
 										<ul>
@@ -93,8 +93,8 @@
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'Laravel'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'Laravel' }">
-									<div class="yellow-circle skill-circle">PH</div>
+								<div @click="searchKey = 'Laravel'" class='col-4 skill-container'>
+									<div class="yellow-circle skill-circle" :class="{ skillSelected: searchKey == 'Laravel' }">PH</div>
 									<div class="circle-desc">
 										<h6>PHP</h6>
 										<ul>
@@ -103,8 +103,8 @@
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'MySQL'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'MySQL' }">
-									<div class="green-circle skill-circle">MY</div>
+								<div @click="searchKey = 'MySQL'" class='col-4 skill-container'>
+									<div class="green-circle skill-circle" :class="{ skillSelected: searchKey == 'MySQL' }">MY</div>
 									<div class="circle-desc">
 										<h6>MySQL</h6>
 										<ul>
@@ -113,8 +113,8 @@
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'Wordpress'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'Wordpress' }">
-									<div class="blue-circle skill-circle">WP</div>
+								<div @click="searchKey = 'Wordpress'" class='col-4 skill-container'>
+									<div class="blue-circle skill-circle" :class="{ skillSelected: searchKey == 'Wordpress' }">WP</div>
 									<div class="circle-desc">
 										<h6>WordPress</h6>
 										<ul>
@@ -124,8 +124,8 @@
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'AWS'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'AWS' }">
-									<div class="red-circle skill-circle">AW</div>
+								<div @click="searchKey = 'AWS'" class='col-4 skill-container'>
+									<div class="red-circle skill-circle" :class="{ skillSelected: searchKey == 'AWS' }">AW</div>
 									<div class="circle-desc">
 										<h6>AWS & GCP</h6>
 										<ul>
@@ -135,8 +135,8 @@
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'API'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'API' }">
-									<div class="yellow-circle skill-circle">AP</div>
+								<div @click="searchKey = 'API'" class='col-4 skill-container'>
+									<div class="yellow-circle skill-circle" :class="{ skillSelected: searchKey == 'API' }">AP</div>
 									<div class="circle-desc">
 										<h6>API's</h6>
 										<ul>
@@ -146,8 +146,8 @@
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'GitHub'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'GitHub' }">
-									<div class="green-circle skill-circle">VE</div>
+								<div @click="searchKey = 'GitHub'" class='col-4 skill-container'>
+									<div class="green-circle skill-circle" :class="{ skillSelected: searchKey == 'GitHub' }">VE</div>
 									<div class="circle-desc">
 										<h6>Version Control</h6>
 										<ul>
@@ -157,8 +157,8 @@
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'JSON'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'JSON' }">
-									<div class="blue-circle skill-circle">JS</div>
+								<div @click="searchKey = 'JSON'" class='col-4 skill-container'>
+									<div class="blue-circle skill-circle" :class="{ skillSelected: searchKey == 'JSON' }">JS</div>
 									<div class="circle-desc">
 										<h6>JSON + XML</h6>
 										<ul>
@@ -166,8 +166,8 @@
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'Vue'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'Vue' }">
-									<div class="red-circle skill-circle">VU</div>
+								<div @click="searchKey = 'Vue'" class='col-4 skill-container'>
+									<div class="red-circle skill-circle" :class="{ skillSelected: searchKey == 'Vue' }">VU</div>
 									<div class="circle-desc">
 										<h6>Vue.js</h6>
 										<ul>
@@ -177,8 +177,8 @@
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'Photoshop'" class='col-4 skill-container' :class="{ rightCaret: searchKey == 'Photoshop' }">
-									<div class="yellow-circle skill-circle">CC</div>
+								<div @click="searchKey = 'Photoshop'" class='col-4 skill-container'>
+									<div class="yellow-circle skill-circle" :class="{ skillSelected: searchKey == 'Photoshop' }">CC</div>
 									<div class="circle-desc">
 										<h6>Adobe CC</h6>
 										<ul>
@@ -290,9 +290,6 @@ export default {
 	background-color: white;
 }
 .display-projects #project-search:focus {
-	border-top: none;
-	border-right: none;
-	border-left: none;
 	border: none;
 }
 .display-projects ::placeholder {
@@ -362,10 +359,6 @@ export default {
 	margin: 0 auto;
 	display: grid;
 	place-items: center;
-	user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	-webkit-transition: all 0.25s ease;
 	-moz-transition: all 0.25s ease;
 	-o-transition: all 0.25s ease;
@@ -400,15 +393,8 @@ export default {
 	padding: 0;
 	margin-bottom: 7.5px;
 }
-.display-projects .rightCaret:before {
-	position: absolute;
-	z-index: -1;
-	content: "";
-	top: calc(12%);
-	right: 20px;
-	border-style: solid;
-	border-width: 10px 10px 10px 0;
-	border-color: transparent #4c87fc transparent transparent;
+.display-projects .skillSelected {
+	border: 3px solid #4c87fc;
 }
 @media (max-width: 992px) {
 	.display-projects .skill-card-container {
@@ -424,6 +410,10 @@ export default {
 @media (max-width: 768px) {
 	.display-projects .skill-card-container .skill-container {
 		padding: 0px;
+		user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
 	}
 }
 @media (min-width: 992px) {
