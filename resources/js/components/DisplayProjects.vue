@@ -313,6 +313,7 @@ export default {
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
+	border: 3px solid #4c87fc;
 }
 .display-projects .card-text {
 	color: #4c87fc;
