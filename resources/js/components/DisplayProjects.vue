@@ -83,7 +83,7 @@
 										</ul>
 									</div>
 								</div>
-								<div @click="searchKey = 'Vue.js'" class='col-4 skill-container'>
+								<div @click="searchKey = 'JavaScript'" class='col-4 skill-container'>
 									<div class="red-circle skill-circle" :class="{ skillSelected: searchKey == 'Vue.js' }">JS</div>
 									<div class="circle-desc">
 										<h6>JavaScript</h6>
