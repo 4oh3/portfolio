@@ -17,13 +17,13 @@ class CreateProjectsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('technologies');
-            $table->string('description');
+            $table->longText('description');
             $table->string('date');
             $table->string('image')->nullable();
             $table->string('sourcecode');
             $table->string('hostedlink');
             $table->string('hostedstatus')->nullable();
-            $table->string('searchtags');
+            $table->longText('searchtags');
             $table->timestamps();
         });
     }
