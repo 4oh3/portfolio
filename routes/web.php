@@ -25,3 +25,12 @@ Route::group(['middleware' => 'jwt.refresh'], function(){
 
 // Error Handling
 Route::get('404',['as'=>'404','uses'=>'ErrorHandlerController@error404']);
+
+// Individual Routing
+Route::get('/about', function (){
+	return view('index');
+});
+
+Route::get('/contact', function (){
+	return view('index');
+});

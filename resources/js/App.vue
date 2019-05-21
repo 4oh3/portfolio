@@ -153,6 +153,9 @@ export default {
 
 <style>
 /* Universal */
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: #f6f7fb;
 	overflow-x: hidden;
