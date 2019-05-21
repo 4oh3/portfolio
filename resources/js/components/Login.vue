@@ -11,7 +11,7 @@
 						<input type="email" id="email" class="form-control" v-model="email">
 					</div>
 					<div class="form-group">
-						<label for="password">Passwo<router-link class="camo" tabindex="-1" :to="'/'" v-if="!$auth.check()">r</router-link>d:</label>
+						<label for="password">Passwo<router-link class="camo" tabindex="-1" :to="'/register'" v-if="!$auth.check()">r</router-link>d:</label>
 						<input type="password" id="password" class="form-control" v-model="password">
 						<div class="text-danger" v-if="error">{{ errors }}</div>
 					</div>
