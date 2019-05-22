@@ -10,7 +10,7 @@ Route::resource('projects', 'ProjectController');
 Route::post('/submit', 'ContactController@mailToAdmin');
 
 // Auth
-Route::post('auth/register', 'AuthController@register');
+ Route::post('auth/register', 'AuthController@register');
 
 Route::post('auth/login', 'AuthController@login');
 
