@@ -10,7 +10,7 @@ Route::resource('projects', 'ProjectController');
 Route::post('/submit', 'ContactController@mailToAdmin');
 
 // Auth
- Route::post('auth/register', 'AuthController@register');
+Route::post('auth/register', 'AuthController@register');
 
 Route::post('auth/login', 'AuthController@login');
 
@@ -33,4 +33,24 @@ Route::get('/about', function (){
 
 Route::get('/contact', function (){
 	return view('index');
+});
+
+// Redirects
+Route::get('/auth/login', function(){
+	return redirect('404');
+});
+Route::get('/auth/logout', function(){
+	return redirect('404');
+});
+Route::get('/auth/register', function(){
+	return redirect('404');
+});
+Route::get('/auth/refresh', function(){
+	return redirect('404');
+});
+Route::get('/auth/user', function(){
+	return redirect('404');
+});
+Route::get('/submit', function(){
+	return redirect('404');
 });

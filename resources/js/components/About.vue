@@ -15,7 +15,7 @@
                 <p class="card-text">
                     👋 I'm <span class="colorBlue">Austin</span>!
                     <br><br>
-                    Test I've finally figured out something that I enjoy doing, and would love to make it a <span class="colorBlue">career</span>
+                    I've finally figured out something that I enjoy doing, and would love to make it a <span class="colorBlue">career</span>
                     – <span class="colorBlue">web development</span>! I enjoy staying <span class="colorBlue">up to
                         date</span> with today's latest and greatest technologies. This whole portfolio website
                     sprouted from my interest in componentialized systems that render on the client side, rather than
